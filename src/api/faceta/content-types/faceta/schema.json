@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "facetas",
+  "info": {
+    "singularName": "faceta",
+    "pluralName": "facetas",
+    "displayName": "Faceta",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "url": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "robots": {
+      "type": "enumeration",
+      "enum": [
+        "index-follow",
+        "index-no-follow",
+        "no-index-follow",
+        "no-index-no-follow"
+      ]
+    },
+    "encabezado": {
+      "type": "richtext"
+    },
+    "body": {
+      "type": "richtext"
+    },
+    "fotos": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "snippets1": {
+      "type": "json"
+    },
+    "snippets2": {
+      "type": "json"
+    }
+  }
+}
